@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Sample Appstore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="search_title">검색</string>
+    <string name="search_hint">게임, 앱, 스토리 등</string>
+
+    <string name="detail_header_new_feature">새로운 기능</string>
+    <string name="detail_header_preview">미리보기</string>
+    <string name="detail_header_rating">평가 및 리뷰</string>
+    <string name="detail_header_info">정보</string>
+
+    <string name="detail_preview_iphone_and_ipad">iPhone 및 iPad용 앱</string>
+    <string name="detail_preview_iphone">iPhone</string>
+    <string name="detail_preview_ipad">iPad</string>
+
+    <string name="detail_description_expand">더 보기</string>
+
+    <string name="detail_info_provider">제공자</string>
+    <string name="detail_info_size">크기</string>
+    <string name="detail_info_category">카테고리</string>
+    <string name="detail_info_reliability">호환성</string>
+    <string name="detail_info_language">언어</string>
+    <string name="detail_info_age">연령등급</string>
+    <string name="detail_info_age_shorten">연령</string>
+    <string name="detail_info_copyright">저작권</string>
+
+    <string name="detail_info_developer">개발자</string>
+</resources>

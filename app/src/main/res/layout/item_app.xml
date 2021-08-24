@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/appItemContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:paddingTop="14dp"
+    android:paddingBottom="24dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/appIconImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@id/appTitleContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundedCornerRadius="12dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/appTitleContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/openAppButton"
+        app:layout_constraintStart_toEndOf="@id/appIconImageView"
+        app:layout_constraintTop_toTopOf="@id/appIconImageView"
+        app:layout_constraintBottom_toBottomOf="@id/appIconImageView">
+
+        <TextView
+            android:id="@+id/appTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/appSubTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey070"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            tools:text="subTitle" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/starRatingBarContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="0"
+                style="?android:ratingBarStyleSmall"
+                android:secondaryProgressTint="@color/skyblue"
+                android:progressTint="@color/skyblue"
+                android:stepSize="0.1"
+                android:max="5" />
+
+            <TextView
+                android:id="@+id/ratingCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey090"
+                android:textSize="10sp"
+                tools:text="subTitle" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/openAppButton"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:text="열기"
+        android:textColor="@color/skyblue"
+        android:textSize="14sp"
+        app:backgroundTint="@color/dark020"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/appIconImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/appTitleContainer"
+        app:layout_constraintTop_toTopOf="@id/appIconImageView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/thumbnailContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@id/appIconImageView">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/firstThumbnail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:maxWidth="120dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@id/secondThumbnail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="H,392:696"
+            app:roundedCornerRadius="12dp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/secondThumbnail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:maxWidth="120dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@id/thirdThumbnail"
+            app:layout_constraintStart_toEndOf="@id/firstThumbnail"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="H,392:696"
+            app:roundedCornerRadius="12dp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/thirdThumbnail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:maxWidth="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/secondThumbnail"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="H,392:696"
+            app:roundedCornerRadius="12dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

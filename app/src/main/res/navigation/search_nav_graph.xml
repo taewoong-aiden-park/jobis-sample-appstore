@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_nav_graph"
+    app:startDestination="@id/historyFragment">
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="co.jobis.sample.appstore.ui.search.history.HistoryFragment"
+        android:label="HistoryFragment">
+
+        <action
+            android:id="@+id/action_historyFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/historyFragment"
+            app:popUpToInclusive="true">
+
+            <argument
+                android:name="input"
+                app:argType="string"
+                app:nullable="false" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="co.jobis.sample.appstore.ui.search.result.ResultFragment"
+        android:label="ResultFragment">
+
+        <argument
+            android:name="input"
+            app:argType="string"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/action_resultFragment_to_historyFragment"
+            app:destination="@id/historyFragment"
+            app:popUpTo="@id/resultFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>

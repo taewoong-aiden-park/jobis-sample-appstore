@@ -1,0 +1,5 @@
+rootProject.name = "Sample Appstore"
+include ':app'
+include ':domain'
+include ':data'
+include ':util'

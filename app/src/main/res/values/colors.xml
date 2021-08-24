@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="altblack">#131323</color>
+    <color name="altblack_50">#87131323</color>
+    <color name="altblack_60">#99131323</color>
+    <color name="blueblack">#1c1a42</color>
+    <color name="coolgrey">#c4c9d8</color>
+    <color name="skyblue">#6ca8ff</color>
+
+    <color name="grey005">#fcfcfd</color>
+    <color name="grey010">#f6f7fa</color>
+    <color name="grey020">#eff1f7</color>
+    <color name="grey030">#e4e7ef</color>
+    <color name="grey040">#dadde8</color>
+    <color name="grey050">#cfd3e0</color>
+    <color name="grey060">#bec2d4</color>
+    <color name="grey070">#b0b5c5</color>
+    <color name="grey080">#9ca1b2</color>
+    <color name="grey090">#888c9f</color>
+    <color name="grey100">#74788c</color>
+
+    <color name="white_70">#b3ffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_30">#4cffffff</color>
+    <color name="white_60">#99ffffff</color>
+
+    <color name="dark010">#565774</color>
+    <color name="dark020">#423f66</color>
+    <color name="dark030">#2d2757</color>
+
+
+</resources>
